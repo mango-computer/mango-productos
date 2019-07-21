@@ -1,0 +1,19 @@
+# Makefile
+#export PKG_CONFIG_PATH=/home/mm/gtk3-win32/lib/pkgconfig
+#-mwindows
+
+
+# Makefile
+
+SHELL := sh -e
+CFLAGS = `pkg-config --cflags --libs gtk+-3.0 gmodule-2.0 gthread-2.0`
+PROJECT_NAME = Mango Busqueda Productos
+BIN_NAME = mango-bproductos
+BIN_DIR = $(DESTDIR)/usr/bin
+
+all: build
+
+build:
+
+	i586-mingw32msvc-gcc main.c $(CFLAGS) -o $(BIN_NAME) -O0 -Wall -Wextra -lpthread 
+

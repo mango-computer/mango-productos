@@ -1,0 +1,16 @@
+# Makefile
+
+SHELL := sh -e
+CFLAGS = `pkg-config --cflags --libs gtk+-3.0 gmodule-2.0 gthread-2.0`
+PROJECT_NAME = Mango Busqueda Productos
+BIN_NAME = mango-bproductos
+BIN_DIR = $(DESTDIR)/usr/bin
+
+all: build
+
+build:
+
+	gcc main.c $(CFLAGS) -o $(BIN_NAME) -O0 -Wall -Wextra -lpthread 
+#	gcc main.c $(CFLAGS) -o $(BIN_NAME) -O0 -Wall -Wextra -std=c99   
+
+

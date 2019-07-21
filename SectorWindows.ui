@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.20.0 -->
+<interface>
+  <requires lib="gtk+" version="3.6"/>
+  <object class="GtkWindow" id="SectorWindows">
+    <property name="can_focus">False</property>
+    <property name="title" translatable="yes">Producto</property>
+    <property name="window_position">center</property>
+    <signal name="destroy" handler="SectorWindows_destroy" swapped="no"/>
+    <signal name="key-press-event" handler="SectorWindows_key_press_event" swapped="no"/>
+    <child>
+      <object class="GtkBox" id="SectorWindows_box">
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">3</property>
+        <child>
+          <object class="GtkBox" id="SectorWindows_box_ficha">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="valign">start</property>
+            <property name="margin_left">3</property>
+            <property name="margin_right">3</property>
+            <property name="margin_top">3</property>
+            <property name="margin_bottom">3</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkScrolledWindow">
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="hscrollbar_policy">never</property>
+                <property name="shadow_type">in</property>
+                <property name="min_content_height">380</property>
+                <child>
+                  <object class="GtkViewport">
+                    <property name="visible">True</property>
+                    <property name="can_focus">False</property>
+                    <child>
+                      <object class="GtkFrame" id="SectorWindows_frame_Informa_atleta">
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="margin_top">10</property>
+                        <property name="label_xalign">0.5</property>
+                        <property name="shadow_type">in</property>
+                        <child>
+                          <object class="GtkBox" id="SectorWindows_box_Informa_atleta">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="valign">start</property>
+                            <property name="margin_left">3</property>
+                            <property name="margin_right">3</property>
+                            <property name="hexpand">True</property>
+                            <property name="vexpand">True</property>
+                            <property name="spacing">3</property>
+                            <child>
+                              <object class="GtkBox" id="id-3">
+                                <property name="visible">True</property>
+                                <property name="can_focus">False</property>
+                                <property name="margin_top">3</property>
+                                <property name="margin_bottom">3</property>
+                                <property name="hexpand">True</property>
+                                <property name="orientation">vertical</property>
+                                <child>
+                                  <object class="GtkGrid" id="id-4">
+                                    <property name="visible">True</property>
+                                    <property name="can_focus">False</property>
+                                    <property name="margin_bottom">3</property>
+                                    <property name="hexpand">True</property>
+                                    <property name="row_spacing">1</property>
+                                    <property name="column_spacing">3</property>
+                                    <child>
+                                      <object class="GtkLabel" id="SectorWindows_label_sector">
+                                        <property name="visible">True</property>
+                                        <property name="can_focus">False</property>
+                                        <property name="halign">start</property>
+                                        <property name="label" translatable="yes">Sector:</property>
+                                      </object>
+                                      <packing>
+                                        <property name="left_attach">0</property>
+                                        <property name="top_attach">0</property>
+                                      </packing>
+                                    </child>
+                                    <child>
+                                      <object class="GtkScrolledWindow" id="SectorWindows_scroll_sector">
+                                        <property name="visible">True</property>
+                                        <property name="can_focus">True</property>
+                                        <property name="hscrollbar_policy">never</property>
+                                        <property name="shadow_type">in</property>
+                                        <property name="min_content_height">300</property>
+                                        <child>
+                                          <object class="GtkViewport" id="SectorWindows_viewport">
+                                            <property name="visible">True</property>
+                                            <property name="can_focus">False</property>
+                                            <property name="shadow_type">none</property>
+                                            <child>
+                                              <object class="GtkBox" id="SectorWindows_general">
+                                                <property name="visible">True</property>
+                                                <property name="can_focus">False</property>
+                                                <property name="orientation">vertical</property>
+                                                <child>
+                                                  <object class="GtkExpander" id="SectorWindows_ex_total">
+                                                    <property name="visible">True</property>
+                                                    <property name="can_focus">True</property>
+                                                    <property name="expanded">True</property>
+                                                    <child>
+                                                      <object class="GtkGrid" id="SectorWindows_grid_total">
+                                                        <property name="visible">True</property>
+                                                        <property name="can_focus">False</property>
+                                                        <property name="margin_left">10</property>
+                                                        <property name="margin_top">10</property>
+                                                        <property name="margin_bottom">10</property>
+                                                        <property name="hexpand">True</property>
+                                                        <property name="row_spacing">5</property>
+                                                        <property name="column_spacing">2</property>
+                                                        <child>
+                                                          <object class="GtkExpander" id="SectorWindows_ex_productos">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="expanded">True</property>
+                                                            <child>
+                                                            <object class="GtkGrid" id="SectorWindows_grid_productos">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="margin_left">10</property>
+                                                            <property name="margin_top">10</property>
+                                                            <property name="margin_bottom">10</property>
+                                                            <property name="column_spacing">2</property>
+                                                            <child>
+                                                            <object class="GtkExpander" id="SectorWindows_ex_productos_quimicos">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="expanded">True</property>
+                                                            <child>
+                                                            <object class="GtkGrid" id="SectorWindows_grid_quimicos">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="margin_left">20</property>
+                                                            <property name="margin_top">10</property>
+                                                            <property name="margin_bottom">10</property>
+                                                            <property name="column_spacing">2</property>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_quimicos_alimentos">
+                                                            <property name="label" translatable="yes">Alimentos</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_quimicos_alimentos_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">0</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_quimicos_agricola">
+                                                            <property name="label" translatable="yes">Agricola, Pecuario, Avicola, Porcino, Piscicola, Apicultura</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_quimicos_agricola_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">1</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_quimicos_cosmeticos_aseo_limpieza">
+                                                            <property name="label" translatable="yes">Cosmeticos, Aseo Personal y de Limpieza</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_quimicos_cosmeticos_aseo_limpieza_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">2</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_quimicos_farmaceuticos">
+                                                            <property name="label" translatable="yes">Farmaceuticos</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_quimicos_farmaceuticos_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">3</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_quimicos_pp_plasticos">
+                                                            <property name="label" translatable="yes">Petroleo, Petroquimica y Plasticos</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_quimicos_pp_plasticos_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">4</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_quimicos_pinturas">
+                                                            <property name="label" translatable="yes">Pinturas</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_quimicos_pinturas_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">5</property>
+                                                            </packing>
+                                                            </child>
+                                                            </object>
+                                                            </child>
+                                                            <child type="label">
+                                                            <object class="GtkLabel" id="SectorWindows_ex_quimicos_label">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="label" translatable="yes">Quimicos</property>
+                                                            </object>
+                                                            </child>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">1</property>
+                                                            <property name="top_attach">0</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkExpander" id="SectorWindows_ex_productos_manufacturados">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="expanded">True</property>
+                                                            <child>
+                                                            <object class="GtkGrid" id="SectorWindows_grid_productos_manufacturados">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="margin_left">20</property>
+                                                            <property name="margin_top">10</property>
+                                                            <property name="margin_bottom">10</property>
+                                                            <property name="column_spacing">2</property>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_manufacturados_Automotriz">
+                                                            <property name="label" translatable="yes">Automotriz</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_manufacturados_Automotriz_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">3</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_manufacturados_uso_hogar">
+                                                            <property name="label" translatable="yes">Uso del Hogar (Electricos, Electronicos, Quimicos, Mecanicos, Otros)</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_manufacturados_uso_hogar_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">1</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_manufacturados_uso_industrial">
+                                                            <property name="label" translatable="yes">Uso Industrial (Electricos, Electronicos, Quimicos, Mecanicos, Otros)</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_manufacturados_uso_industrial_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">2</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_manufacturados_uso_personal">
+                                                            <property name="label" translatable="yes">Uso Personal (Aseo, Limpieza, Cosmeticos, Ropa, Calzado)</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_manufacturados_uso_personal_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">0</property>
+                                                            </packing>
+                                                            </child>
+                                                            </object>
+                                                            </child>
+                                                            <child type="label">
+                                                            <object class="GtkLabel" id="SectorWindows_ex_productos_manufacturados_label">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="label" translatable="yes">Manufacturados</property>
+                                                            </object>
+                                                            </child>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">1</property>
+                                                            <property name="top_attach">1</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkExpander" id="SectorWindows_ex_productos_sector_primario">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="expanded">True</property>
+                                                            <child>
+                                                            <object class="GtkGrid" id="SectorWindows_grid_productos_sector_primario">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="margin_left">20</property>
+                                                            <property name="margin_top">10</property>
+                                                            <property name="margin_bottom">10</property>
+                                                            <property name="column_spacing">2</property>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_sector_primario_agricola">
+                                                            <property name="label" translatable="yes">Agricola</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_sector_primario_agricola_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">0</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_sector_primario_pecuario">
+                                                            <property name="label" translatable="yes">Pecuario</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_sector_primario_pecuario_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">1</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_sector_primario_avicola">
+                                                            <property name="label" translatable="yes">Avícola</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_sector_primario_avicola_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">2</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_sector_primario_porcino">
+                                                            <property name="label" translatable="yes">Procino</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_sector_primario_porcino_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">3</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_sector_primario_piscicola">
+                                                            <property name="label" translatable="yes">Piscicola</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_sector_primario_piscicola_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">4</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton" id="SectorWindows_check_productos_sector_primario_apicola">
+                                                            <property name="label" translatable="yes">Apicola</property>
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            <signal name="toggled" handler="SectorWindows_check_productos_sector_primario_apicola_toggled_cb" swapped="no"/>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">5</property>
+                                                            </packing>
+                                                            </child>
+                                                            </object>
+                                                            </child>
+                                                            <child type="label">
+                                                            <object class="GtkLabel" id="SectorWindows_ex_productos_sector_primario_label">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="label" translatable="yes">Sector Primario</property>
+                                                            </object>
+                                                            </child>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">1</property>
+                                                            <property name="top_attach">2</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <placeholder/>
+                                                            </child>
+                                                            <child>
+                                                            <placeholder/>
+                                                            </child>
+                                                            <child>
+                                                            <placeholder/>
+                                                            </child>
+                                                            </object>
+                                                            </child>
+                                                            <child type="label">
+                                                            <object class="GtkLabel" id="SectorWindows_ex_productos_label">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="label" translatable="yes">Productos</property>
+                                                            </object>
+                                                            </child>
+                                                          </object>
+                                                          <packing>
+                                                            <property name="left_attach">1</property>
+                                                            <property name="top_attach">0</property>
+                                                          </packing>
+                                                        </child>
+                                                        <child>
+                                                          <object class="GtkExpander" id="SectorWindows_ex_servicios">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <child>
+                                                            <object class="GtkGrid" id="SectorWindows_grid_servicios">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="margin_left">10</property>
+                                                            <property name="margin_top">10</property>
+                                                            <property name="margin_bottom">10</property>
+                                                            <property name="column_spacing">2</property>
+                                                            <child>
+                                                            <object class="GtkExpander" id="SectorWindows_ex_servicios_profesionales">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <child>
+                                                            <object class="GtkGrid">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="margin_left">20</property>
+                                                            <property name="margin_top">10</property>
+                                                            <property name="margin_bottom">10</property>
+                                                            <property name="column_spacing">2</property>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">0</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">1</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">2</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">3</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">4</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">5</property>
+                                                            </packing>
+                                                            </child>
+                                                            </object>
+                                                            </child>
+                                                            <child type="label">
+                                                            <object class="GtkLabel" id="SectorWindows_ex_servicios_profesionales_label">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="label" translatable="yes">Profesionales</property>
+                                                            </object>
+                                                            </child>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">1</property>
+                                                            <property name="top_attach">0</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkExpander">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <child>
+                                                            <object class="GtkGrid">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="margin_left">20</property>
+                                                            <property name="margin_top">10</property>
+                                                            <property name="margin_bottom">10</property>
+                                                            <property name="column_spacing">2</property>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">0</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">1</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">2</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">3</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">4</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">5</property>
+                                                            </packing>
+                                                            </child>
+                                                            </object>
+                                                            </child>
+                                                            <child type="label">
+                                                            <object class="GtkLabel">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="label" translatable="yes">Tecnicos</property>
+                                                            </object>
+                                                            </child>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">1</property>
+                                                            <property name="top_attach">1</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkExpander">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <child>
+                                                            <object class="GtkGrid">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="margin_left">20</property>
+                                                            <property name="margin_top">10</property>
+                                                            <property name="margin_bottom">10</property>
+                                                            <property name="column_spacing">2</property>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">0</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">1</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">2</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">3</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">4</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <object class="GtkCheckButton">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">True</property>
+                                                            <property name="receives_default">False</property>
+                                                            <property name="draw_indicator">True</property>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">0</property>
+                                                            <property name="top_attach">5</property>
+                                                            </packing>
+                                                            </child>
+                                                            </object>
+                                                            </child>
+                                                            <child type="label">
+                                                            <object class="GtkLabel">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="label" translatable="yes">Taxis</property>
+                                                            </object>
+                                                            </child>
+                                                            </object>
+                                                            <packing>
+                                                            <property name="left_attach">1</property>
+                                                            <property name="top_attach">2</property>
+                                                            </packing>
+                                                            </child>
+                                                            <child>
+                                                            <placeholder/>
+                                                            </child>
+                                                            <child>
+                                                            <placeholder/>
+                                                            </child>
+                                                            <child>
+                                                            <placeholder/>
+                                                            </child>
+                                                            </object>
+                                                            </child>
+                                                            <child type="label">
+                                                            <object class="GtkLabel" id="SectorWindows_ex_servicios_label">
+                                                            <property name="visible">True</property>
+                                                            <property name="can_focus">False</property>
+                                                            <property name="label" translatable="yes">Servicios</property>
+                                                            </object>
+                                                            </child>
+                                                          </object>
+                                                          <packing>
+                                                            <property name="left_attach">1</property>
+                                                            <property name="top_attach">1</property>
+                                                          </packing>
+                                                        </child>
+                                                        <child>
+                                                          <placeholder/>
+                                                        </child>
+                                                        <child>
+                                                          <placeholder/>
+                                                        </child>
+                                                      </object>
+                                                    </child>
+                                                    <child type="label">
+                                                      <object class="GtkLabel" id="SectorWindows_ex_total_label">
+                                                        <property name="visible">True</property>
+                                                        <property name="can_focus">False</property>
+                                                        <property name="label" translatable="yes">Sectores</property>
+                                                      </object>
+                                                    </child>
+                                                  </object>
+                                                  <packing>
+                                                    <property name="expand">False</property>
+                                                    <property name="fill">True</property>
+                                                    <property name="position">0</property>
+                                                  </packing>
+                                                </child>
+                                              </object>
+                                            </child>
+                                          </object>
+                                        </child>
+                                      </object>
+                                      <packing>
+                                        <property name="left_attach">0</property>
+                                        <property name="top_attach">1</property>
+                                      </packing>
+                                    </child>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                        <child type="label">
+                          <object class="GtkLabel" id="id-20">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="label" translatable="yes">Seleccionar Sector</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkGrid" id="SectorWindows_grid_botonera">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="valign">end</property>
+            <property name="margin_left">3</property>
+            <property name="margin_right">3</property>
+            <property name="margin_bottom">3</property>
+            <property name="vexpand">True</property>
+            <child>
+              <object class="GtkButtonBox" id="buttonbox1">
+                <property name="visible">True</property>
+                <property name="can_focus">False</property>
+                <property name="halign">end</property>
+                <property name="hexpand">True</property>
+                <property name="spacing">2</property>
+                <property name="layout_style">end</property>
+                <child>
+                  <object class="GtkButton" id="SectorWindows_boton_aceptar">
+                    <property name="label">gtk-ok</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="tooltip_text" translatable="yes">Graba y cierra la ventana</property>
+                    <property name="use_stock">True</property>
+                    <property name="always_show_image">True</property>
+                    <signal name="clicked" handler="SectorWindows_boton_aceptar_clicked_cb" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="SectorWindows_boton_cerrar">
+                    <property name="label">gtk-cancel</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">True</property>
+                    <property name="tooltip_text" translatable="yes">Cierra sin grabar</property>
+                    <property name="use_stock">True</property>
+                    <property name="always_show_image">True</property>
+                    <signal name="clicked" handler="SectorWindows_boton_cerrar_clicked_cb" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
