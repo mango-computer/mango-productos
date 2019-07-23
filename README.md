@@ -42,7 +42,7 @@ vg_registroUser->codEstado = 4;
 vg_registroUser->codMunicipio = 1;
 vg_registroUser->id contiene el valor id único en todo el sistema, para nuestro ejemplo es 1 (dejarlo
 así)
-vg_registroUser->codEstado aquí se puede colocar sólo (4=Aragua), (8=Cojedes), (14=Merida) los
+vg_registroUser->codEstado aquí se puede colocar sólo (4=Aragua), (8=Cojedes), (14=Mérida) los
 demás no están implementados.
 Acá se configura el estado donde se encuentra el registro del ofertante de productos
 Luego de modificado estos valores grabamos y cerramos el documento.
@@ -73,7 +73,7 @@ Para compilar solamente ejecutar make
 para arrancar ejecutar ./server-mp
 desde otro terminal abrir un telnet en el puerto 3550
 procedemos a registrar cada clientes
-por ejemplo para registrar el ID=1 (los Ids son generados automaticamente cada
+por ejemplo para registrar el ID=1 (los Ids son generados automáticamente cada
 vez que se registra un cliente)
 130 crear user Mango-Electrodomesticos 4 1 15500
 el ultimo parámetro se supone que es el puerto de escucha del cliente, es obvio que un sistema
@@ -83,6 +83,10 @@ Asi lo hacemos sucesivamente por cada cliente.
 Se debe tener cuidado en los pasos, porque sino esta bien configurado el sistema no
 funcionara.
 
-Para mayor informacion abrir el documento AboutMe.pdf
+Para mayor información abrir el documento AboutMe.pdf
 
 
+
+-- 
+atte.
+Ing. José Andrés Morales Linares
