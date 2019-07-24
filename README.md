@@ -2,17 +2,17 @@ Mango Productos
 
 Mango Bienes y Servicios, es un prototipo de programa de intercambio de información sobre ofertas y
 demandas de bienes y servicios entre usuarios directamente por medio de una red p2p.
-En principio esta pensado para equipos sobre mesa, pero luego en una segunda etapa se puede llegar a
+En principio, está pensado para equipos sobre mesa, pero luego en una segunda etapa se puede llegar a
 celulares y tablets.
-El uso del programa es para un publico muy amplio, no se limita a un sector determinado, podría ser
-usado por instituciones publicas y privadas, empresas del estado y privadas, organizaciones y por
+El uso del programa es para un público muy amplio, no se limita a un sector determinado, podría ser
+usado por instituciones públicas y privadas, empresas del estado y privadas, organizaciones y por
 particulares, es crear una comunidad virtual.
-Mientras mas personas puedan publicar sus productos, servicios o necesidades el sistema tendrá una
+Mientras más personas puedan publicar sus productos, servicios o necesidades el sistema tendrá una
 amplia gama de posibilidades de encontrar lo que se necesita, o en otro sentido, de encontrar quien
 quiere el producto que estas ofertando.
 El sistema publica por igual bienes, servicios y necesidades.
 
-Como probar e Instalar
+Como probar he Instalar
 
 Ejecutar el archivo ./linux-compilar.sh para compilar en linux.
 Para compilar necesita tener las librerías GTK3 para desarrolladores.
@@ -53,7 +53,7 @@ unsigned int vg_identificador
 Este valor debe ser igual al id de vg_registroUser→id, para este caso es 1
 Luego de modificado el valor grabamos y cerramos el documento.
 Ahora abrimos macros.h
-En la linea 61 modificamos lo siguiente
+En la línea 61 modificamos lo siguiente
 #define STR_IP_SERVER "127.0.0.1"
 ESTO ES MUY IMPORTANTE (COMO TODO LO DEMÁS TAMBIÉN), LA VARIABLE
 STR_IP_SERVER TIENE LA IP DONDE ESTA UBICADO EL SERVIDOR CONTROL
@@ -76,12 +76,12 @@ procedemos a registrar cada clientes
 por ejemplo para registrar el ID=1 (los Ids son generados automáticamente cada
 vez que se registra un cliente)
 130 crear user Mango-Electrodomesticos 4 1 15500
-el ultimo parámetro se supone que es el puerto de escucha del cliente, es obvio que un sistema
+el último parámetro se supone que es el puerto de escucha del cliente, es obvio que un sistema
 terminado este paso es automático entre los programas, por ahora tenemos que hacerlo nosotros.
 Luego tecleamos 100 y otra vez 100 para salir
-Asi lo hacemos sucesivamente por cada cliente.
-Se debe tener cuidado en los pasos, porque sino esta bien configurado el sistema no
-funcionara.
+Así lo hacemos sucesivamente por cada cliente.
+Se debe tener cuidado en los pasos, porque sino está bien configurado el sistema no
+funcionará.
 
 Para mayor información abrir el documento AboutMe.pdf
 
